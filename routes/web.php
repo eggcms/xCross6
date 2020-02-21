@@ -29,5 +29,10 @@ Route::group(['prefix' => 'admin'], function(){
         Route::get('/', 'HomeController@index');
         Route::resource('/blog', 'Admin\BlogsController');
         Route::resource('/group', 'GroupController');
+
+
     });
 });
+
+Route::get('ckeditor', 'CkeditorController@index');
+Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');

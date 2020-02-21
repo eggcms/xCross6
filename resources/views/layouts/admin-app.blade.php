@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/admin.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    {{-- <div id="app"> --}}
+        <div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/admin') }}">
@@ -70,5 +71,7 @@
             @yield('content')
         </main>
     </div>
+
+
 </body>
 </html>

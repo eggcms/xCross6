@@ -1,23 +1,29 @@
+a {
+    &:hover {
+        text-decoration:none;
+    }
+}
 .side-menu {
     ul {
         list-style: none;
         padding: 0;
     }
-    li {
-        border-bottom:1px dashed #aaaaaa;
+    li { width:100%; margin-bottom:10px;
         a { 
             color:black;
             display: block;
-            padding: 6px;
+            padding: 6px 10px;
             text-decoration: none;
 
-            &:hover {
-                color:red;
-            }
+            // &:hover {
+            //     color:red;
+            // }
          }
-         &:hover { background-color: #eeeeee;}
-         &:last-child { border-bottom:none; }
+        //  &:hover { background-color: #efefef;}
+        &:last-child { margin-bottom:0; }
     }
 }
+
+
 
 	
