@@ -15,8 +15,7 @@
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 </head>
 <body>
-    {{-- <div id="app"> --}}
-        <div>
+    <div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/admin') }}">
@@ -70,6 +69,11 @@
         <main>
             @yield('content')
         </main>
+        <footer>
+            <footer>
+                @include('admin.comp.footer')
+            </footer>
+        </footer>
     </div>
 
 

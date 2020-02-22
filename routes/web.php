@@ -28,8 +28,8 @@ Route::group(['prefix' => 'admin'], function(){
     Route::group(['middleware' => ['is_admin']], function(){
         Route::get('/', 'HomeController@index');
         Route::resource('/blog', 'Admin\BlogsController');
-        Route::resource('/group', 'GroupController');
-
+        Route::resource('/group', 'Admin\GroupController');
+        Route::resource('/user', 'Admin\UserController');
 
     });
 });

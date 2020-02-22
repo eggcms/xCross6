@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
 
+
     <div class="row">
         <div class="col-2 py-3 side-menu">
             @include('admin.comp.sidemenu')
@@ -78,7 +79,7 @@
                                         <form action="/blog/" method="POST">
                                             <input type="hidden" name="_method" value="PUT" />
                                             <input type="hidden" name="switch" value="status" />
-                                            <button type="submit" class="btn btn-sm btn-link"><i class="fas fa-rss text-success"></i></button>
+                                            <button type="submit" class="btn btn-link"><i class="fas fa-rss text-success"></i></button>
                                             @csrf
                                         </form>
                                     </td>
@@ -97,7 +98,7 @@
                                         <form action="/blog/" method="POST">
                                             <input type="hidden" name="_method" value="PUT" />
                                             <input type="hidden" name="switch" value="status" />
-                                            <button type="submit" class="btn btn-sm btn-link"><i class="fas fa-rss text-success"></i></button>
+                                            <button type="submit" class="btn btn-link"><i class="fas fa-rss text-success"></i></button>
                                             @csrf
                                         </form>
                                     </td>
@@ -116,7 +117,7 @@
                                         <form action="/blog/" method="POST">
                                             <input type="hidden" name="_method" value="PUT" />
                                             <input type="hidden" name="switch" value="status" />
-                                            <button type="submit" class="btn btn-sm btn-link"><i class="fas fa-rss text-success"></i></button>
+                                            <button type="submit" class="btn btn-link"><i class="fas fa-rss text-success"></i></button>
                                             @csrf
                                         </form>
                                     </td>
@@ -141,3 +142,4 @@
 </div>
 
 @endsection
+

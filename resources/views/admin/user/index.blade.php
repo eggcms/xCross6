@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
 
+
     <div class="row">
         <div class="col-2 py-3 side-menu">
             @include('admin.comp.sidemenu')
@@ -12,8 +13,8 @@
                 <div class="col">
                     <div class="card border-0">
                         <div class="card-header border-0 bg-light">
-                            <b>Blog manage</b>
-                            <a href="{{url('admin/blog/create')}}" class="cancel btn-sm btn-success float-right"> &nbsp; <i class="fas fa-plus"></i> เพิ่มบทความ &nbsp; </a>
+                            <b>@ User manage</b>
+                            <a href="{{url('admin/user/create')}}" class="cancel btn-sm btn-success float-right"> &nbsp; <i class="fas fa-plus"></i> เพิ่มสมาชิกใหม่ &nbsp; </a>
                         </div>
                         <div class="card-body">
 
@@ -61,7 +62,7 @@
                                 <thead>
                                 <tr class="table-success">
                                     <th width="7%">ID</th>
-                                    <th>Title</th>
+                                    <th>Username</th>
                                     <th width="3%" text-align="center">Status</th>
                                     <th width="3%" align="center">&nbsp;</th>
                                 </tr>
@@ -69,10 +70,8 @@
                                 <tbody>
                                 <tr align="top">
                                     <td>1</td>
-                                    <td>แชมเปี้ยนสปาฟลอร์มาม่า รูบิค มิลค์แอ๊บแบ๊วเฟอร์รี่ ซาฟารีเพรส ไนน์จูน บัตเตอร์นู้ดปูอัดโฟนผลไม้ โมเต็ล
-                                        แชมเปี้ยนสปาฟลอร์มาม่า รูบิค มิลค์แอ๊บแบ๊วเฟอร์รี่ ซาฟารีเพรส ไนน์จูน บัตเตอร์นู้ดปูอัดโฟนผลไม้ โมเต็ล
-                                        แชมเปี้ยนสปาฟลอร์มาม่า รูบิค มิลค์แอ๊บแบ๊วเฟอร์รี่ ซาฟารีเพรส ไนน์จูน บัตเตอร์นู้ดปูอัดโฟนผลไม้ โมเต็ล
-                                        แชมเปี้ยนสปาฟลอร์มาม่า รูบิค มิลค์แอ๊บแบ๊วเฟอร์รี่ ซาฟารีเพรส ไนน์จูน บัตเตอร์นู้ดปูอัดโฟนผลไม้ โมเต็ล
+                                    <td>
+                                        <a href="#" class="d-block">admin@admin.com</a>
                                     </td>
                                     <td>
                                         <form action="/blog/" method="POST">
@@ -92,7 +91,9 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>เบนโตะช็อค เฟรช อะสึนามิสะบึมส์เกสต์เฮาส์เซนเซอร์ เตี๊ยมอึ้ม ออร์แกนิกควีนโบว์อุด้ง</td>
+                                    <td>
+                                        <a href="#" class="d-block">editor@editor.com</a>
+                                    </td>
                                     <td>
                                         <form action="/blog/" method="POST">
                                             <input type="hidden" name="_method" value="PUT" />
@@ -111,7 +112,9 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>บาร์บีคิวจิตพิสัยเฟอร์นิเจอร์จุ๊ยแดนซ์ ฮอตดอกซูเปอร์ดัมพ์มอยส์เจอไรเซอร์ ดีเจทิปเยอบีราดราม่าคอนโด มยุราภิรมย์โปสเตอร์แบคโฮ</td>
+                                    <td>
+                                        <a href="#" class="d-block">eggcms@eggcms.com</a>
+                                    </td>
                                     <td>
                                         <form action="/blog/" method="POST">
                                             <input type="hidden" name="_method" value="PUT" />
@@ -141,3 +144,4 @@
 </div>
 
 @endsection
+
