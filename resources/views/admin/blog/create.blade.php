@@ -11,8 +11,8 @@
                 <div class="col">
                     <div class="card border-0">
                         <div class="card-header border-0 bg-light">
-                            <b>Blog manage</b>
-                            <a href="{{url('admin/user')}}" class="cancel btn-sm btn-danger float-right"> &nbsp; ยกเลิก &nbsp; </a>
+                            <b>@ Blog manage</b>
+                            <a href="{{url('admin/blog')}}" class="cancel btn-sm btn-danger float-right"> &nbsp; ยกเลิก &nbsp; </a>
                         </div>
                         <div class="card-body">
                             @if (session('status'))
@@ -69,11 +69,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
-
-                                            <div class="form-group">
+                                            <p class="mb-2">รูปภาพ:</p>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                                </div>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                </div>
+                                            </div>
+                                            {{-- <div class="form-group">
                                                 <label for="FormControlFile1">รูปภาพ</label>
                                                 <input type="file" class="form-control-file" id="FormControlFile1" name="image">
-                                            </div>
+                                            </div> --}}
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group">
